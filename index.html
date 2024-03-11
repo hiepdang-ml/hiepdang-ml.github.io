@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiep Dang Resume</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      min-width: 1024px;
+      max-width: 1024px;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    .contact-info{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .work-experience {
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #000;
+    }
+    .education-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .education-entry span {
+      display: block;
+    }
+    .skill-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .location {
+      white-space: nowrap;
+      font-weight: bold;
+      font-style: italic;
+      text-align: right;
+    }
+    .dates {
+      white-space: nowrap;
+      font-style: italic;
+      text-align: right;
+    }
+    .university {
+      font-weight: bold;
+    }
+    .major {
+      font-style: italic;
+    }
+    .skillset{
+      font-weight: bold;
+    }
+    .skills {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 12fr 10fr;
+      column-gap: 5px;
+    }
+    ul {
+      margin: 10px;
+      padding-left: 25px;
+    }
+    .project-name {
+      font-weight: bold;
+    }
+    .experience-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .company-name {
+      font-weight: bold;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    .department {
+      font-weight: bold;
+    }
+    .job-category {
+      font-style: italic;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hiep Dang</h1>
+  <div class="contact-info">
+    <span>
+      Mobile: +1 (347) 247 9378 | 
+      Email: <a href="mailto:dangvohiep@gmail.com">dangvohiep@gmail.com</a> | 
+      GitHub: <a href="https://hiepdang-ml.github.io" target="_blank">https://hiepdang-ml.github.io</a>
+    </span>
+  </div>
+  
+  <div class="education">
+    <h2 class="section-title">EDUCATION:</h2>
+    <div class="education-entry">
+      <div>
+        <span class="university">Yeshiva University<br></span>
+        <span class="major">M.Sc. Artificial Intelligence<br></span>
+        <span class="university">Liverpool John Moores University<br></span>
+        <span clsas="major">M.Sc. Machine Learning & AI<br></span>
+        <span clsas="major">M.Sc. Computer Science<br></span>
+      </div>
+      <div>
+        <span class="location">New York City, United States<br></span>
+        <span class="dates">September 2023 - Current<br></span>
+        <span class="location">Liverpool, United Kingdom<br></span>
+        <span class="dates">September 2023<br></span>
+        <span class="dates">June 2024<br></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <h2 class="section-title">SKILLS:</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <strong>Language:</strong> Python (OOP), SQL<br>
+        <strong>Machine Learning & Deep Learning:</strong> Pytorch, Tensorflow, Keras, Hugging Face, MLflow, OpenCV, Scikit-learn, NLTK, Spacy<br>
+        <strong>Database:</strong> PostgreSQL, SQL Server, MySQL, MongoDB<br>
+        <strong>OS:</strong> Ubuntu<br> 
+        <strong>Shell:</strong> Bash, Zsh<br>
+      </div>
+      <div class="skill-category">
+        <strong>Version Control:</strong> Git, Github<br>
+        <strong>Cloud:</strong> Amazon Elastic Compute Cloud (EC2), Google Compute Engine, Lambda GPU Cloud<br>
+        <strong>Others:</strong> Django, Apache Airflow, Pyspark, Numpy, Regex, SQLalchemy, Pyodbc, Pymongo, Selenium, BeautifulSoup<br>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects">
+    <h2 class="section-title">PROJECTS:</h2>
+    <ul>
+      <li><span class="project-name">Text-to-Video:</span> Implemented Conditional Stable Diffusion, trained the model on the WebVid-10M dataset
+        using cloud GPU service connected through SSH, hosted the pipeline on HuggingFace.</li>
+      <li><span class="project-name">Stock Investment Application:</span> Wrote up an ETL pipeline to feed data to a PostgreSQL database, implemented
+        Conv1D, Bidirectional LSTM, GRU to predict price movements (achieved MAE < 0.5% for all stocks). Exposed the
+        models as a Web API using Django REST Framework.</li>
+      <li><span class="project-name">Robotic Arms:</span> Modeled a manipulator composed of a triangular platform in a 2-dimensional space, solved the
+        planar Stewart platform using Newton's method.</li>
+      <li><span class="project-name">GPS Positioning:</span> Found the location of satellites, estimated maximum position error and condition number using
+        multi-variate Newton's method.</li>
+      <li><span class="project-name">Image Compression:</span> Developed a pipeline that compresses input images using Singular Value Decomposition (SVD).</li>
+      <li><span class="project-name">Molecular Conformation:</span> Computed potential energy of a cluster of atoms, used Nelder-Mead algorithm, gradient
+        descent, and gradient descent with backtracking to solve the molecular conformation of a system of any number of
+        atoms.</li>
+    </ul>
+  </div>
+  <div class="work-experience">
+    <h2 class="section-title">WORK EXPERIENCE:</h2>
+    <div class="experience-entry">
+      <div>
+        <span class="company-name">Phu Hung Securities Corporation<br></span>
+        <span class="job-title">Supervisor</span> 
+        <strong>@</strong> 
+        <span class="department">Data Analytics Department, Risk Management Division</span>
+      </div>
+      <div>
+        <span class="location">Ho Chi Minh City, Vietnam<br></span>
+        <span class="dates">October 2020 - May 2023<br></span>
+      </div>
+    </div>
+    <div>
+      <div class="job-category">Data Science Projects:</div>
+      <ul>
+        <li><span class="project-name">Optical Character Recognition (OCR) pipelines:</span> 
+          We used OpenCV and Pytesseract, able to read 60% of the information.
+        </li>
+        <li><span class="project-name">Value at Risk model (VaR):</span> 
+          D'Agostino's K-squared test (to detect manipulated stock movements), Monte-Carlo Simulation on Normal Distribution, Student's t-Distribution, 
+          Skew-normal Distribution, Pearson Type VII Distribution.
+        </li>
+        <li><span class="project-name">Market sentiment tracker:</span> 
+          Web scraping, NLP, Naïve-Bayes Classifier (achieved 98% precision & 93% recall).
+        </li>
+        <li><span class="project-name">Credit Rating System: </span> 
+          Implement PCA and K-Means Clustering (predicted the crash of HOSE: HBC).
+        </li>
+        <li><span class="project-name">Customer Evaluation Algorithm: </span> 
+          Implement Multilayer Perceptron to predict the revenue one customer would generate for the company based on their demographic 
+          (achieved MAE at approximately $130 on monthly data).
+        </li>
+        <li><span class="project-name">Options Valuation System:</span> 
+          Implement Black Scholes Pricing Model, Delta-Gamma Hedging.
+        </li>
+        <li><span class="project-name">GUI Automation:</span> 
+          We used OpenCV and Pywinauto to detect buttons, texts, and other objects to automate manual tasks over a software interface.
+        </li>
+      </ul>
+    </div>
+    <div class="job-category">Data Engineering Projects:</div>
+    <ul>
+      <li><span class="project-name">ETL Pipelines and Data Warehouse Management:</span> 
+        Manage centralized databases to facilitate all analytical projects. Design and implement data pipelines 
+        from real-time trading system. Develop web scraping pipelines to enrich the Data Warehouse. Ensure data 
+        consistency and integrity.
+      </li>
+      <li><span class="project-name">Warning System:</span> 
+        for Risk Management: constantly scan the data stream from stock exchanges to alert market anomalies.
+      </li>
+    </ul>
+    <div class="job-category">Reporting & Visualization Projects:</div>
+    <ul>
+      <li><span class="project-name">Reporting Application:</span> 
+        create a web application such that back-office divisions can login and generate internal reports.
+      </li>
+      <li><span class="project-name">Auto-mailing System:</span> 
+        prepare and send out daily report to our customers.
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
