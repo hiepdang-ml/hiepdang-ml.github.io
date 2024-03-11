@@ -24,9 +24,14 @@
     h2 {
       margin-top: 20px;
     }
+    li {
+      margin-bottom: 1.6px;
+    }
     ul {
       margin: 10px;
-      padding-left: 25px;
+      padding-left: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
     }
     .contact-info {
       text-align: center;
@@ -52,6 +57,8 @@
       font-weight: bold;
       font-style: italic;
       text-align: right;
+      margin-top: 5px;
+      margin-bottom: 2px;
     }
     .dates {
       white-space: nowrap;
@@ -60,6 +67,8 @@
     }
     .university {
       font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 2px;
     }
     .major {
       font-style: italic;
@@ -109,8 +118,8 @@
   <div class="contact-info">
     <span>
       Mobile: +1 (347) 247 9378 | 
-      Email: <a href="mailto:dangvohiep@gmail.com">dangvohiep@gmail.com</a> | 
-      GitHub: <a href="https://hiepdang-ml.github.io" target="_blank">https://hiepdang-ml.github.io</a>
+      Email: <a href="mailto:dangvohiep@gmail.com"> dangvohiep@gmail.com</a> | 
+      GitHub: <a href="https://hiepdang-ml.github.io" target="_blank"> https://hiepdang-ml.github.io</a>
     </span>
   </div>
   
@@ -119,17 +128,21 @@
     <div class="education-entry">
       <div>
         <span class="university">Yeshiva University<br></span>
-        <li class="major">M.Sc. Artificial Intelligence<br></li>
+        <ul>
+          <li class="major" style="margin-top: 0px;">M.Sc. Artificial Intelligence<br></li>
+        </ul>
         <span class="university">Liverpool John Moores University<br></span>
-        <li clsas="major">M.Sc. Machine Learning & AI<br></li>
-        <li clsas="major">M.Sc. Computer Science<br></li>
+        <ul>
+          <li clsas="major" style="margin-top: 0px;">M.Sc. Machine Learning & AI<br></li>
+          <li clsas="major" style="margin-top: 0px;">M.Sc. Computer Science<br></li>
+        </ul>    
       </div>
       <div>
         <span class="location">New York City, United States<br></span>
-        <span class="dates">September 2023 - Current<br></span>
+        <span class="dates" style="margin-top: 0px;">September 2023 - Current<br></span>
         <span class="location">Liverpool, United Kingdom<br></span>
-        <span class="dates">September 2023<br></span>
-        <span class="dates">June 2024<br></span>
+        <span class="dates" style="margin-top: 0px;">September 2023<br></span>
+        <span class="dates" style="margin-top: 0px;">June 2024<br></span>
       </div>
     </div>
   </div>
@@ -155,19 +168,41 @@
   <div class="projects">
     <h2 class="section-title">PROJECTS:</h2>
     <ul>
-      <li><span class="project-name">Text-to-Video:</span> Implemented Conditional Stable Diffusion, trained the model on the WebVid-10M dataset
-        using cloud GPU service connected through SSH, hosted the pipeline on HuggingFace.</li>
-      <li><span class="project-name">Stock Investment Application:</span> Wrote up an ETL pipeline to feed data to a PostgreSQL database, implemented
-        Conv1D, Bidirectional LSTM, GRU to predict price movements (achieved MAE < 0.5% for all stocks). Exposed the
-        models as a Web API using Django REST Framework.</li>
-      <li><span class="project-name">Robotic Arms:</span> Modeled a manipulator composed of a triangular platform in a 2-dimensional space, solved the
-        planar Stewart platform using Newton's method.</li>
-      <li><span class="project-name">GPS Positioning:</span> Found the location of satellites, estimated maximum position error and condition number using
-        multi-variate Newton's method.</li>
-      <li><span class="project-name">Image Compression:</span> Developed a pipeline that compresses input images using Singular Value Decomposition (SVD).</li>
-      <li><span class="project-name">Molecular Conformation:</span> Computed potential energy of a cluster of atoms, used Nelder-Mead algorithm, gradient
-        descent, and gradient descent with backtracking to solve the molecular conformation of a system of any number of
-        atoms.</li>
+      <li><span class="project-name">Text-to-Video:</span> 
+        Implemented Conditional Stable Diffusion, trained the model on the WebVid-10M dataset
+        using cloud GPU service connected through SSH, hosted the pipeline on HuggingFace. 
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">Object Detection:</span> 
+        Implemented Single-Shot Multibox Detection from scratch on the NuImages-v1.0 dataset
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">Stock Investment Application:</span> 
+        Wrote up an ETL pipeline to feed data to a PostgreSQL database, implemented Conv1D, 
+        Bidirectional LSTM, GRU to predict price movements (achieved MAE < 0.5% for all stocks). 
+        Exposed the models as a Web API using Django REST Framework.
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">Robotic Arms:</span> 
+        Modeled a manipulator composed of a triangular platform in a 2-dimensional space, solved 
+        the planar Stewart platform using Newton's method.
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">GPS Positioning:</span> 
+        Found the location of satellites, estimated maximum position error and condition number 
+        using multi-variate Newton's method.
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">Image Compression:</span> 
+        Developed a pipeline that compresses input images using Singular Value Decomposition (SVD).
+        <a href="" target="_blank">[See more]</a>
+      </li>
+      <li><span class="project-name">Molecular Conformation:</span> 
+        Computed potential energy of a cluster of atoms, used Nelder-Mead algorithm, gradient descent, 
+        and gradient descent with backtracking to solve the molecular conformation of a system of any 
+        number of atoms.
+        <a href="" target="_blank">[See more]</a>
+      </li>
     </ul>
   </div>
   <div class="work-experience">
